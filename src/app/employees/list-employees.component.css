@@ -1,0 +1,11 @@
+.imgageClass{
+    height: 200px;
+    width: 200px;
+}
+.empoyee-details{
+    height: 300px;
+}
+.vertical-align: {
+    display: flex;
+    align-items: center; 
+}

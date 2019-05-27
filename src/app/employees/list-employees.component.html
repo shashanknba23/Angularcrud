@@ -1,0 +1,53 @@
+<div class="empoyee-details panel panel-primary" *ngFor='let employee of employees'>
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      {{employee.name}}
+    </h3>
+  </div>
+  <div class="panel-body col-xs-10">
+    <div class="row">
+      <div class="col-xs-4">
+        <img class="imgageClass" [src]='employee.photoPath'/>
+      </div>
+      <div class="col-xs-8">
+        <div class="row">
+          <div class="col-xs-6">
+            Gender
+          </div>
+          <div class="col-xs-6">
+              : {{employee.gender}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            Date of birth
+          </div>  
+          <div class="col-xs-6">
+            : {{employee.dateofBirth | date}}
+          </div>
+        </div>
+
+        <div class="row"> 
+          <div class="col-xs-6">
+            Phone Number
+          </div>
+          <div class="col-xs-6">
+            : {{employee.phoneNumber}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            Email
+          </div>
+          <div class="col-xs-6">
+            : {{employee.email}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-2"></div>
+</div>
