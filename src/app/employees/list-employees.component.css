@@ -5,7 +5,7 @@
 .empoyee-details{
     height: 300px;
 }
-.vertical-align: {
+.vertical-align {
     display: flex;
     align-items: center; 
 }
